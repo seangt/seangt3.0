@@ -1,0 +1,783 @@
+* 
+    {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+
+body 
+    {
+    }
+#container
+    {
+    margin-left: auto;
+ 	margin-right: auto;
+ 	width:687px;
+    }
+
+h2, h3 
+    {
+    font-weight: normal;
+    }
+h2
+    {
+	text-align: center;
+	font-family: "Roboto Slab";
+    font-size: 36px;
+    color:black;
+    }
+h3
+    {
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    height:100%;
+    margin-bottom:6px;
+    border-bottom:1px solid white;
+    }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+#navbar
+    {
+    padding-top:8px;
+    padding-bottom:8px;
+    position: fixed;
+    z-index:2;
+
+    background:white;
+    float:left;
+    width:100%;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 4px 0 black;
+    }
+#phone_logo
+    {
+    display:none;
+    }
+#logo
+    {
+    position:relative;
+    z-index:-1;
+    
+    }
+#logo.resize
+    {
+    width:auto;
+    height:50px;
+    margin-top:-5px;
+    }
+h1
+    {
+    font-family: "Geo";
+    font-size: 45px;
+    text-align:center;
+    position:relative;
+    font-weight:normal;
+    height:41px;
+    line-height:41px;
+    width:100%; 
+    margin-left:-2px;
+    }
+a
+    {
+    text-decoration: none;
+    color: black;	
+    }
+a: visited 
+    {
+    text-decoration: none;
+    color: black;
+    }
+a: active 
+    {
+    text-decoration: none;
+    color: black;
+    }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR: NAVI BUTTONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+ul
+    {
+    list-style-type: none;
+    }
+li.nav
+    {
+    display:inline;
+    float:left;
+    /*width:143px;*/
+    width:20%;
+    text-align:center;
+    }
+.nav_button
+    {
+    position:relative;
+	background-color: #3BF2BE;
+	margin-right:8px;
+	line-height: 41px;
+	font-size:20px;
+	display:inline;
+    }
+#person_button
+    {
+    background: #0894fe;
+    color: white;
+    }
+#art_button span
+    {
+    display:none;
+    }
+#art_button:after
+    {
+    content: 'Artist';
+    }
+#music_button span
+    {
+    display:none;
+    }
+#music_button:after
+    {
+    content: 'Producer';
+    }
+#music_button
+    {
+    }
+#ui_button span
+    {
+    display:none;
+    }
+#ui_button:after
+    {
+    content: 'UI Guy';
+    }
+    
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR: SOCIAL BUTTONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.social
+    {
+    position:relative;
+    float:left;
+    margin-right:8px;
+    display:none;
+    }
+
+#linkedin
+    {
+    margin-right:0px;
+    }
+
+/*
+.social
+    {
+    margin-top:8px;
+    float:left;
+    position: relative;
+	text-align: left;
+	font-family: "Roboto Slab";
+    font-size: 21px;
+    line-height:44px;
+    width:100%;
+    }
+.social:hover
+    {
+    opacity: 0.5;
+    }
+
+#email
+    {
+    position: relative;
+    float:left;
+    margin-top:8px;
+    }
+#email:hover
+    {
+    opacity: 0.5;
+    }
+#email_text
+    {
+	position: relative;
+	float:left;
+	margin-top:8px;
+	line-height:43px;
+	margin-left:5px;
+	text-align: left;
+	font-family: "Roboto Slab";
+    font-size: 21px;
+    }
+*/ 
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CONTENT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+ul.touch_social
+    {
+    width=100%;
+    }
+.touch_social img
+    {
+    height:28px;
+    width:auto;
+    margin-top:7px;
+    }
+#scloud
+    {
+    width:41px;
+    height:auto;
+    margin-top:12px;
+    }
+.touch
+    {
+    display:inline;
+    margin-top:74px;
+    margin-right:8px;
+    margin-bottom:-9px;
+    z-index:1;
+    height:41px;
+    width: calc(20% - 8px);
+    background:#3BF2BE;
+    text-align:center;
+    }
+#email.touch
+    {
+    margin-left:8px;
+    width:calc(20% - 16px);
+    }
+.scrollfixer
+    {
+    height:82px;
+    }
+#content
+    {
+    float:left;
+    position:relative;
+    margin-left:17px;
+    margin-right:17px;
+    }
+li.title
+    {
+    padding-top:30px;
+    }
+#title
+    {
+    position: relative;
+    font-family: 'Roboto Slab';
+    font-size: 36px;
+    text-align: center;
+    background: #3BF2BE;
+    line-height:25px;
+    }
+span 
+    { 
+    line-height: 0px;
+    }
+.underline 
+    { 
+    vertical-align:top; 
+    }
+li.cards
+    {
+    width: 653px;
+    margin-bottom:-82px;
+    }
+li#card1
+    {
+    margin-bottom:-82px;
+    }
+li#card
+    {
+    height: auto;
+    background: #0894fe;
+    position: relative;
+    width: 619px;
+    padding:17px;
+    margin-top:17px;
+    }
+li#card1
+    {
+    margin-top:17px;
+    }
+p
+    {
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17px;
+    color: white;
+    line-height:120%;
+    }
+.text_link
+    {
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17px;
+    color: white;
+    line-height:120%;
+    }
+.text_link:hover
+    {
+    text-decoration:underline;
+    }
+a img 
+    { 
+    border:none; 
+    vertical-align:top;
+    }
+    
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION: PERSON~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: SEAN THOMAS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+#kayak_img
+    {
+    position: relative;
+    background:white;
+    float:left;
+    }
+#kayak_img img.source
+    {
+    width:397px;
+    height:auto;
+    }
+.hoverimage
+    {
+    position:absolute;
+    top:17px;
+    right:17px;
+    display:block;
+    opacity:0.5;
+    height:33px;
+    width:33px;
+    }
+#sean_thomas_title
+    {
+    margin-top:-4px;
+    float: right;
+    width: 205px;
+    }
+#sean_thomas_text
+    {
+    float:right;
+    width:205px;
+    }
+   
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION: UI DESIGN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: AMAUMD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    
+
+#ama1_img
+    {
+    position: relative;
+    background:white;
+    }
+#ama1_img img.source
+    {
+    width:619px;
+    height:auto;
+    }
+#ama1_img:hover .source
+    {
+    opacity:0.7;
+    }
+#ama1_img:hover .hoverimage
+    {
+    display:block;
+    }
+#ama1_title
+    {
+    width: 619px;
+    margin-top:4px;
+    }
+#ama1_text
+    {
+    width: 619px;
+    }
+#ama2_img
+    {
+    position: relative;
+    background:white;
+    margin-top: 17px;
+    float:left;
+    }
+#ama2_img img.source
+    {
+    width:297px;
+    height:auto;
+    }
+#ama2_img:hover .source
+    {
+    opacity:0.7;
+    }
+#ama2_img:hover .hoverimage
+    {
+    display:block;
+    }
+#ama2_title
+    {
+    float:left;
+    width:305px;
+    margin-top:13px;
+    margin-left:16px;
+    }
+#ama2_text
+    {
+    float:left;
+    width:305px;
+    margin-left:16px;
+    }
+    
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: PORTFOLIO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    
+
+#portfolio1_img
+    {
+    position: relative;
+    background:white;
+    float: right;
+    }
+#portfolio1_img img.source
+    {
+    width:397px;
+    height:auto;
+    }
+#portfolio1_title
+    {
+    width: 205px;
+    margin-top:-4px;
+    }
+#portfolio1_text
+    {
+    width: 205px;
+    }
+#portfolio2_img
+    {
+    position: relative;
+    background:white;
+    margin-top: 17px;
+    float:right;
+    }
+#portfolio2_img img.source
+    {
+    width:619px;
+    height:auto;
+    }
+#portfolio2_title
+    {
+    float:left;
+    width:100%;
+    margin-top:4px;
+    }
+#portfolio2_text
+    {
+    float:left;
+    }
+    
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION: GRAPHIC ART~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: TIMELINE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+#timeline_img
+    {
+    position: relative;
+    background:white;
+    float:left;
+    }
+#timeline_img img.source
+    {
+    width:397px;
+    height:auto;
+    }
+
+#timeline_title
+    {
+    margin-top:-4px;
+    float: right;
+    width:205px;
+    }
+#timeline_text
+    {
+    float: right;
+    width: 205px;
+    }
+    
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: A2LP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    
+#left_text
+    {
+    width:205px;
+    float:right;
+    }
+#right_images
+    {
+    width:414px;
+    float:right;
+    }
+#a2lp_title
+    {
+    margin-top:-4px;
+    float:left;
+    width: 205px;
+    }
+#a2lp_text
+    {
+    float:left;
+    width: 205px;
+    }  
+#a2lp1_img
+    {
+    position: relative;
+    float:left;
+    margin-left:17px;
+    background:white;
+    }
+#a2lp1_img img.source
+    {
+    width:190px;
+    height:auto;
+    }
+#a2lp2_img
+    {
+    position: relative;
+    float:left;
+    margin-left:17px;
+    background:white;
+    }
+#a2lp2_img img.source
+    {
+    width:190px;
+    height:auto;
+    }
+#a2lp3_img
+    {
+    position: relative;
+    float:left;
+    margin-left:17px;
+    margin-top:17px;
+    background:white;
+    }
+#a2lp3_img img.source
+    {
+    width:190px;
+    height:auto;
+    }
+#a2lp4_img
+    {
+    position: relative;
+    float:left;
+    margin-left:17px;
+    margin-top:17px;
+    background:white;
+    }
+#a2lp4_img img.source
+    {
+    width:190px;
+    height:auto;
+    } 
+#a2lp5_img
+    {
+    position: relative;
+    float:left;
+    margin-left:17px;
+    margin-top:17px;
+    background:white;
+    }
+#a2lp5_img img.source
+    {
+    width:190px;
+    height:auto;
+    }
+  
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: BUSINESS CARDS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    
+#right_text
+    {
+    width:205px;
+    float:left;
+    }
+#left_images
+    {
+    width:414px;
+    float:left;
+    }
+#business_title
+    {
+    margin-top:-4px;
+    float:left;
+    width: 205px;
+    }
+#business_text
+    {
+    float:left;
+    width: 205px;
+    }   
+#card11_img
+    {
+    position: relative;
+    background:white;
+    float:left;
+    }
+#card11_img img.source
+    {
+    width:190px;
+    height:auto;
+    }
+#card12_img
+    {
+    position: relative;
+    background:white;
+    float:left;
+    margin-left:17px;
+    }
+#card12_img img.source
+    {
+    width:190px;
+    height:auto;
+    }
+#card2_img
+    {
+    position: relative;
+    background:white;
+    float:left;
+    margin-top:17px;
+    margin-bottom:17px;
+    }
+#card2_img img.source
+    {
+    width:397px;
+    height:auto;
+    }  
+#card31_img
+    {
+    position: relative;
+    background:white;
+    float:left;
+    }
+#card31_img img.source
+    {
+    width:190px;
+    height:auto;
+    }
+
+#card32_img
+    {
+    position: relative;
+    background:white;
+    float:left;
+    margin-left:17px;
+    }
+#card32_img img.source
+    {
+    width:190px;
+    height:auto;
+    }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION: MUSIC~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: REINTRO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+#profanity
+    {
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height:120%;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    margin-bottom:10px;
+    }
+#reintro_player1
+    {
+    position: relative;
+    }
+#reintro1_title
+    {
+    }
+#reintro1_text
+    {
+    }
+#reintro_player2
+    {
+    position: relative;
+    margin-top: 17px;
+    }
+#reintro2_title
+    {
+    }
+#reintro2_text
+    {
+    }
+#reintro_player3
+    {
+    position: relative;
+    margin-top:17px;
+    }
+#reintro3_title
+    {
+    }
+#reintro3_text
+    {
+    }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: TEST~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+#test_player
+    {
+    position: relative;
+    }
+#test_title
+    {
+    }
+#test_text
+    {
+    }    
+    
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: TEAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+#teal_player1
+    {
+    position: relative;
+    }
+#teal_title
+    {
+    }
+#teal_text
+    {
+    }
+#teal2_player2
+    {
+    position: relative;
+    margin-top:17px;
+    }
+#teal2_title
+    {
+    }
+#teal2_text
+    {
+    }
