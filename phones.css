@@ -1,18 +1,22 @@
+iframe
+    {
+    height:115px;
+    }
 * 
     {
     margin: 0;
     padding: 0;
     border: 0;
     }
+
 body 
     {
-    margin-left: auto;
- 	margin-right: auto;
- 	width: 1024px;
- 	position: relative;
- 	/*background:black;*/
- 	/*omg work*/
     }
+#container
+    {
+
+    }
+
 h2, h3 
     {
     font-weight: normal;
@@ -43,34 +47,36 @@ h3
 
 #navbar
     {
-    margin-left: 17px;
-    margin-top:17px;
-    width: 320px;
-    float: left;
-    position:fixed;  
+    padding-top:8px;
+    padding-bottom:8px;
+    position: fixed;
+    z-index:2;
+
+    background:white;
+    float:left;
+    width:100%;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 4px 0 black;
     }
-#phone_logo
+img#phone_logo
     {
-    display:none;
-    }
-#logo
-    {
-    
-    margin-top:-48px;
-    z-index:-1;
-    width:320px;
+    position:relative;
+    display:inline;
+    width:40px;
     height:auto;
     }
 h1
     {
     font-family: "Geo";
-    font-size: 112px;
-    display: inline-block;
+    font-size: 20px;
+    text-align:center;
     position:relative;
     font-weight:normal;
-    line-height:62px;
-    height:62px;
-    margin-top:34px;
+    height:41px;
+    line-height:41px;
+    width:100%; 
+    margin-left:0px;
+    display:none;
     }
 a
     {
@@ -96,22 +102,62 @@ ul
     {
     list-style-type: none;
     }
+li.nav
+    {
+    display:inline;
+    float:left;
+    /*width:143px;*/
+    width:20%;
+    text-align:center;
+    }
 .nav_button
     {
     position:relative;
 	background-color: #3BF2BE;
-	margin-top: 8px;
-	line-height: 50px;
-    }
-.nav_button:hover
-    {
-	opacity: 0.5 !important;
+	margin-right:8px;
+	line-height: 41px;
+	font-size:17px;
+	display:inline;
     }
 #person_button
     {
     background: #0894fe;
     color: white;
-    margin-top:15px;
+    }
+#person_button span
+    {
+    display:none;
+    }
+#person_button:after
+    {
+    content: 'Me';
+    }
+#art_button span
+    {
+    display:none;
+    }
+#art_button:after
+    {
+    content: 'Art';
+    }
+#music_button span
+    {
+    display:none;
+    }
+#music_button:after
+    {
+    content: 'Music';
+    }
+#music_button
+    {
+    }
+#ui_button span
+    {
+    display:none;
+    }
+#ui_button:after
+    {
+    content: 'UI';
     }
     
     
@@ -121,38 +167,13 @@ ul
 .social
     {
     position:relative;
-    margin-top:8px;
     float:left;
     margin-right:8px;
-    height:50px;
-    width:57px;
-    text-align:center;
-    background: #3BF2BE;
-    }
-.social img
-    {
-    height:28px;
-    width:auto;
-    margin-top:11px;
-    }
-#soundcloud img
-    {
-    width:41px;
-    height:auto;
-    margin-top:16px;
-    }
-.social:hover
-    {
-    opacity:0.5;
+    display:none;
     }
 #linkedin
     {
     margin-right:0px;
-    width:59px;
-    }
-#email
-    {
-    width:58px;
     }
 
 /*
@@ -197,20 +218,48 @@ ul
     
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CONTENT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
+ul.touch_social
+    {
+    width=100%;
+    }
+.touch_social img
+    {
+    height:28px;
+    width:auto;
+    margin-top:7px;
+    }
+#scloud
+    {
+    width:41px;
+    height:auto;
+    margin-top:12px;
+    }
 .touch
     {
-    display:none;
+    display:inline;
+    margin-top:74px;
+    margin-right:8px;
+    margin-bottom:-9px;
+    z-index:1;
+    height:41px;
+    width: calc(20% - 8px);
+    background:#3BF2BE;
+    text-align:center;
+    }
+#email.touch
+    {
+    margin-left:8px;
+    width:calc(20% - 16px);
     }
 .scrollfixer
     {
-    height:30px;
+    height:82px;
     }
 #content
     {
-    float:right;
-    margin-right:17px;
-    margin-bottom:17px;
+    float:left;
+    position:relative;
+    width:100%;
     }
 li.title
     {
@@ -218,15 +267,14 @@ li.title
     }
 #title
     {
-    position: absolute;
+    position: relative;
     font-family: 'Roboto Slab';
     font-size: 36px;
-    width:100%;
     text-align: center;
-    z-index:1;
     background: #3BF2BE;
     line-height:25px;
-    width: 653px;
+    margin-left:8px;
+    margin-right:8px;
     }
 span 
     { 
@@ -238,21 +286,24 @@ span
     }
 li.cards
     {
-    width: 653px;
-    padding-top:25px;
-    margin-bottom:-30px;
+    margin-bottom:-82px;
     }
 li#card1
     {
-    margin-bottom:-30px;
+    margin-bottom:-82px;
     }
 li#card
     {
     height: auto;
     background: #0894fe;
     position: relative;
-    width: 619px;
-    padding:17px;
+    padding:8px;
+    margin-top:17px;
+    margin-left:8px;
+    margin-right:8px;
+    }
+li#card1
+    {
     margin-top:17px;
     }
 p
@@ -260,7 +311,7 @@ p
     position: relative;
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 16px;
+    font-size: 17px;
     color: white;
     line-height:120%;
     }
@@ -269,7 +320,7 @@ p
     position: relative;
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 16px;
+    font-size: 17px;
     color: white;
     line-height:120%;
     }
@@ -295,15 +346,16 @@ a img
     position: relative;
     background:white;
     float:left;
+    max-height:500px;
+    overflow:hidden;
     }
-#kayak_img img.source
+img.source
     {
-    width:397px;
+    width:100%;
     height:auto;
     }
 #kayak_img:hover .source
     {
-    opacity:0.7;
     }
 #kayak_img:hover .hoverimage
     {
@@ -314,25 +366,26 @@ a img
     position:absolute;
     top:17px;
     right:17px;
-    display:none;
+    display:block;
+    opacity:0.5;
     height:33px;
     width:33px;
+
     }
 #sean_thomas_title
     {
-    margin-top:-4px;
-    float: right;
-    width: 205px;
+    float: left;
+    width: 100%;
+    margin-top:3px;
     }
 #sean_thomas_text
     {
-    float:right;
-    width:205px;
+    float:left;
+    width:100%;
     }
    
     
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION: UI DESIGN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: AMAUMD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     
@@ -341,10 +394,12 @@ a img
     {
     position: relative;
     background:white;
+    max-height:500px;
+    overflow:hidden;
     }
 #ama1_img img.source
     {
-    width:619px;
+    width:100%;
     height:auto;
     }
 #ama1_img:hover .source
@@ -357,12 +412,12 @@ a img
     }
 #ama1_title
     {
-    width: 619px;
+    width: 100%;
     margin-top:4px;
     }
 #ama1_text
     {
-    width: 619px;
+    width: 100%;
     }
 #ama2_img
     {
@@ -370,10 +425,12 @@ a img
     background:white;
     margin-top: 17px;
     float:left;
+    max-height:500px;
+    overflow:hidden;
     }
 #ama2_img img.source
     {
-    width:297px;
+    width:100%;
     height:auto;
     }
 #ama2_img:hover .source
@@ -387,18 +444,14 @@ a img
 #ama2_title
     {
     float:left;
-    width:305px;
-    margin-top:13px;
-    margin-left:16px;
+    width:100%;
+    margin-top:4px;
     }
 #ama2_text
     {
     float:left;
-    width:305px;
-    margin-left:16px;
+    width:100%;
     }
-    
-
     
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: PORTFOLIO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     
@@ -408,15 +461,11 @@ a img
     position: relative;
     background:white;
     float: right;
-    }
-#portfolio1_img img.source
-    {
-    width:397px;
-    height:auto;
+    max-height:500px;
+    overflow:hidden;
     }
 #portfolio1_img:hover .source
     {
-    opacity:0.7;
     }
 #portfolio1_img:hover .hoverimage
     {
@@ -424,12 +473,14 @@ a img
     }
 #portfolio1_title
     {
-    width: 205px;
-    margin-top:-4px;
+    width: 100%;
+    float:left;
+    margin-top:3px;
     }
 #portfolio1_text
     {
-    width: 205px;
+    width: 100%;
+    float:left;
     }
 #portfolio2_img
     {
@@ -437,20 +488,10 @@ a img
     background:white;
     margin-top: 17px;
     float:right;
+    max-height:500px;
+    overflow:hidden;
     }
-#portfolio2_img img.source
-    {
-    width:619px;
-    height:auto;
-    }
-#portfolio2_img:hover .source
-    {
-    opacity:0.7;
-    }
-#portfolio2_img:hover .hoverimage
-    {
-    display:block;
-    }
+
 #portfolio2_title
     {
     float:left;
@@ -459,6 +500,7 @@ a img
     }
 #portfolio2_text
     {
+    width:100%;
     float:left;
     }
     
@@ -474,231 +516,130 @@ a img
     position: relative;
     background:white;
     float:left;
+    max-height:500px;
+    overflow:hidden;
     }
-#timeline_img img.source
-    {
-    width:397px;
-    height:auto;
-    }
-#timeline_img:hover .source
-    {
-    background:white;
-    opacity:0.7;
-    }
-#timeline_img:hover .hoverimage
-    {
-    display:block;
-    }
-.hoverimage
-    {
-    position:absolute;
-    top:17px;
-    right:17px;
-    display:none;
-    }
+
+
 #timeline_title
     {
-    margin-top:-4px;
-    float: right;
-    width:205px;
+    float: left;
+    width:100%;
+    margin-top:3px;
     }
 #timeline_text
     {
-    float: right;
-    width: 205px;
+    float: left;
+    width: 100%;
     }
     
     
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: A2LP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     
-#left_text
-    {
-    width:205px;
-    float:right;
-    }
-#right_images
-    {
-    width:414px;
-    float:right;
-    }
+
 #a2lp_title
     {
-    margin-top:-4px;
     float:left;
-    width: 205px;
+    width: 100%;
+    margin-top:3px;
     }
 #a2lp_text
     {
     float:left;
-    width: 205px;
+    width: 100%
     }  
 #a2lp1_img
     {
     position: relative;
     float:left;
-    margin-left:17px;
     background:white;
+    max-height:200px;
+    width:calc(50% - 4px);
+    margin:0 8px 8px 0;
+    overflow:hidden;
     }
-#a2lp1_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#a2lp1_img:hover .source
-    {
-    opacity:0.7;
-    }
-#a2lp1_img:hover .hoverimage
-    {
-    display:block;
-    }
+
 #a2lp2_img
     {
     position: relative;
     float:left;
-    margin-left:17px;
+    max-height:200px;
+    width:calc(50% - 4px);
+    margin:0 0 8px 0;
+    overflow:hidden;
     background:white;
     }
-#a2lp2_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#a2lp2_img:hover .source
-    {
-    opacity:0.7;
-    }
-#a2lp2_img:hover .hoverimage
-    {
-    display:block;
-    }
+
 #a2lp3_img
     {
     position: relative;
     float:left;
-    margin-left:17px;
-    margin-top:17px;
+    max-height:200px;
+    width:calc(50% - 4px);
+    margin:0 8px 8px 0;
+    overflow:hidden;
     background:white;
     }
-#a2lp3_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#a2lp3_img:hover .source
-    {
-    opacity:0.7;
-    }
-#a2lp3_img:hover .hoverimage
-    {
-    display:block;
-    } 
+
 #a2lp4_img
     {
     position: relative;
     float:left;
-    margin-left:17px;
-    margin-top:17px;
+    max-height:200px;
+    width:calc(50% - 4px);
+    margin:0 0 0 0;
+    overflow:hidden;
     background:white;
     }
-#a2lp4_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#a2lp4_img:hover .source
-    {
-    opacity:0.7;
-    }
-#a2lp4_img:hover .hoverimage
-    {
-    display:block;
-    }   
+
 #a2lp5_img
     {
     position: relative;
     float:left;
-    margin-left:17px;
-    margin-top:17px;
+    max-height:200px;
+    width:100%;
+    overflow:hidden;
     background:white;
     }
-#a2lp5_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#a2lp5_img:hover .source
-    {
-    opacity:0.7;
-    }
-#a2lp5_img:hover .hoverimage
-    {
-    display:block;
-    }
+
   
     
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD: BUSINESS CARDS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     
-#right_text
-    {
-    width:205px;
-    float:left;
-    }
-#left_images
-    {
-    width:414px;
-    float:left;
-    }
+
 #business_title
     {
-    margin-top:-4px;
     float:left;
-    width: 205px;
+    width: 100%;
+    margin-top:-4px;
     }
 #business_text
     {
     float:left;
-    width: 205px;
+    width: 100%;
     }   
 #card11_img
     {
     position: relative;
     background:white;
     float:left;
+    max-height:200px;
+    overflow:hidden;
+    width:calc(50% - 4px);
+    margin:0 8px 0 0;
     }
-#card11_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#card11_img:hover .source
-    {
-    opacity:0.7;
-    }
-#card11_img:hover .hoverimage
-    {
-    display:block;
-    }  
+
 #card12_img
     {
     position: relative;
     background:white;
     float:left;
-    margin-left:17px;
+    max-height:200px;
+    overflow:hidden;
+    width:calc(50% - 4px);
+    margin:0 0 0 0;
     }
-#card12_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#card12_img:hover .source
-    {
-    opacity:0.7;
-    }
-#card12_img:hover .hoverimage
-    {
-    display:block;
-    }  
+
 #card2_img
     {
     position: relative;
@@ -706,59 +647,35 @@ a img
     float:left;
     margin-top:17px;
     margin-bottom:17px;
+    max-height:200px;
+    overflow:hidden;
+    width:100%;
+    margin:8px 0 8px 0;
     }
-#card2_img img.source
-    {
-    width:397px;
-    height:auto;
-    }
-#card2_img:hover .source
-    {
-    opacity:0.7;
-    }
-#card2_img:hover .hoverimage
-    {
-    display:block;
-    }   
+
 #card31_img
     {
     position: relative;
     background:white;
     float:left;
+    max-height:200px;
+    overflow:hidden;
+    width:calc(50% - 4px);
+    margin:0 8px 8px 0;
     }
-#card31_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#card31_img:hover .source
-    {
-    opacity:0.7;
-    }
-#card31_img:hover .hoverimage
-    {
-    display:block;
-    }   
+  
 #card32_img
     {
     position: relative;
     background:white;
     float:left;
     margin-left:17px;
+    max-height:200px;
+    overflow:hidden;
+    width:calc(50% - 4px);
+    margin:0 0 8px 0;
     }
-#card32_img img.source
-    {
-    width:190px;
-    height:auto;
-    }
-#card32_img:hover .source
-    {
-    opacity:0.7;
-    }
-#card32_img:hover .hoverimage
-    {
-    display:block;
-    }
+
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION: MUSIC~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
